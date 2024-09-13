@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.ts" defer></script>
+    <style>
+      body {
+        background: url("background.jpg") repeat-y;
+        background-size: cover;
+      }
+    </style>
     <title>Vite + TS</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+  <body class="center-width">
+    <h1 class="framed accent-color">Bienvenue sur mon site</h1>
+    <div class="gap flex-col">
+      <div class="flex-col framed">
+        <h2 class="accent-color">Quizzes</h2>
+        <a href="quizzs/mathSecondDegres/index.html" class="accent-color fancy-link"> Second degrés (math) </a>
+        <a href="quizzs/calculMental/index.html" class="accent-color fancy-link"> Calcul mental (math) </a>
+      </div>
+      <div class="flex-col framed">
+        <h2 class="accent-color">Jeux</h2>
+        <a href="./jeux/memory/index.html" class="accent-color fancy-link">memory</a>
+        <a href="./jeux/pendu/index.html" class="accent-color fancy-link">pendu</a>
+        <a href="./jeux/demineur/index.html" class="accent-color fancy-link">démineur</a>
+        <a href="./jeux/rockPaperScisor/index.html" class="accent-color fancy-link">Pierre papier ciseaux</a>
+        <a href="./jeux/snake/index.html" class="accent-color fancy-link">Snake</a>
+        <a href="./jeux/puissance4/index.html" class="accent-color fancy-link">puissance 4</a>
+      </div>
+    </div>
   </body>
 </html>

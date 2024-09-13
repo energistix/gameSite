@@ -8,11 +8,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --accent-color: #67c14f;
 }
 
 html,
 body {
   margin: 0;
+  height: 100%;
 }
 
 @media (prefers-color-scheme: light) {
@@ -20,4 +22,41 @@ body {
     color: #213547;
     background-color: #ffffff;
   }
+}
+
+.center-width {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.framed {
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: black;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.fancy-link:hover {
+  text-decoration: underline;
+  transform: translate(5px, 0);
+}
+
+.fancy-link {
+  text-decoration: none;
+  transition: transform 0.1s ease-in-out;
+}
+
+.gap {
+  gap: 1rem;
 }
